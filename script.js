@@ -91,9 +91,27 @@ const somma = numeroPc + numeroUtente;
 // controllo se è pari o dispari
 function checkPariODispari(somma) {
   if (somma % 2 === 0) {
-    return pari
+    return `pari`
   } else {
-    return dispari
+    return `dispari`
   }
 }
 
+// definisco un'altra variabile per la funzione somma
+const risultatoFinale = checkPariODispari(somma);
+
+// controllo se la variabile è pari o dispari
+if (risultatoFinale === `pari`) {
+  console.log(`è pari`)
+
+} else {
+  console.log(`è dispari`)
+}
+
+// faccio il paragone tra il risultato finale e quello scelto dall'utente, se la scelta dell'utente combacia allora si và con le scomesse
+
+if (risultatoFinale === pariOdispari) {
+  console.log(`hai vinto`)
+} else {
+  console.log(`hai perso`)
+}
