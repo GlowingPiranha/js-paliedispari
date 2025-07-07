@@ -62,3 +62,38 @@ if (palindromaSi(parola)) {
   console.log(`non è palindroma`)
 }
 
+
+
+// Pari e Dispari
+// L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
+// Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
+// Sommiamo i due numeri
+// Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
+// Dichiariamo chi ha vinto.
+
+const pariOdispari = prompt(`scegli pari o dispari`);
+const numeroUtente = parseInt(prompt(`inserisci un numero da 1 a 5`));
+
+// controllo se è pari o dispari
+function checkPariODispari(numero) {
+  if (numero % 2 === 0) {
+    return pari
+  } else {
+    return dispari
+  }
+}
+
+
+// randomInteger ha la sua funzione di numero random tra due valori interi
+function randomInteger(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// definisco numeroPc con la funzione e gli dò un range da 1 a 5
+const numeroPc = randomInteger(1, 5);
+console.log(numeroPc)
+
+// faccio la somma dei due valori
+const somma = numeroPc + numeroUtente;
+
+
